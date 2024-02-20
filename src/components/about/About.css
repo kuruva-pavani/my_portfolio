@@ -1,0 +1,63 @@
+#about{
+  margin-top: 4rem; /* Adjust the margin as needed */
+}
+
+.homestarting {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.image-container {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.text-container {
+  flex: 1;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .homestarting {
+    flex-direction: column;
+  }
+  
+  .text-container, .image-container {
+    text-align: center; /* Center both text and image */
+  }
+
+  img {
+    height: auto; /* Let the browser determine image height */
+    width: 100%; /* Image takes full width of container */
+    max-width: 500px; /* Limit image width for smaller screens */
+  }
+}
+
+button {
+  margin-top: 2rem;
+}
+
+.btn {
+  background-color: #BF5CAA !important;
+  border: none;
+  height: 3rem;
+}
+
+.image-container {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.profile-image {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Let the browser determine the height */
+}
+
+@media (max-width: 768px) {
+  .profile-image {
+    max-width: 500px; /* Limit image width for smaller screens */
+  }
+}

@@ -1,0 +1,27 @@
+.heading {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin-top: 50px; /* Adjust as needed */
+}
+
+button {
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  margin: 0 10px; /* Add some spacing between buttons */
+  color: #BF5CAA ;
+  border-color: #BF5CAA;
+}
+button:active{
+  color: black;
+}
+.mySkills{
+  text-wrap: wrap !important;
+}
+.vertical-timeline-element-subtitle{
+  color: #BF5CAA;
+}
+
+#experience{
+  margin-top: 10rem;
+}

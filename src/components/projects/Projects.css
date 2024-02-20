@@ -1,0 +1,66 @@
+/* styles.css */
+.carousel {
+  max-width: 800px; /* Set your desired maximum width */
+  margin: 0 auto; /* Center the carousel horizontally */
+}
+h2{
+  margin-top: 5rem !important;
+}
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  color: red;
+}
+button{
+  background-color: white;
+  border: none;
+  /* height: 2rem;
+  width: auto; */
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(76,76,78, 0.8); /* Increase opacity to 80% */
+  padding: 20px;
+  text-align: center; /* Center align the text */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+  .carousel-caption {
+    position: relative; /* Change to relative positioning */
+    bottom: auto; /* Remove bottom positioning */
+    background-color: rgba(0, 0, 0,0.8); /* Keep opacity */
+    padding: 10px; /* Reduce padding */
+  }
+}
+.carouselcontainer{
+  margin-top: 4rem;
+}
+
+h2{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+a{
+  color: white!important;
+}
+
+.btnLink{
+  background-color: #BF5CAA !important;
+}
+.btnLink a{
+  color: white!important;
+}
+p{
+  color: #BF5CAA;
+}
+hr{
+  color: white;
+}

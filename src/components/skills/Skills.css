@@ -1,0 +1,68 @@
+
+.container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; /* Align blocks with space around */
+}
+ /* Center the content horizontally */
+
+.heading {
+  text-align: center; /* Center the text within the block */
+}
+
+.block {
+  width: 15rem; /* Fixed width for each block */
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  /* background-color: black; */
+  /* color: black; */
+  color: #BF5CAA;
+  border-radius: 2rem;
+  width: calc(30% - 20px); /* Set blocks to occupy 50% of the container width with some margin */
+  margin: 10px;
+}
+
+.block + .block {
+  margin-left: 20px; /* Add some space between blocks */
+}
+
+.block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add some space between skills */
+}
+
+.progress-bar {
+  width: 100px; /* Adjust width as needed */
+  height: 10px;
+  background-color: #f0f0f0 !important;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #BF5CAA !important;
+}
+.skills{
+  justify-content: center;
+}
+#skills {
+  text-align: center; /* Center the text */
+  margin-top: 5rem; /* Adjust margin as needed for spacing */
+  margin-bottom: 2rem; /* Adjust margin as needed for spacing */
+}
+@media screen and (max-width: 768px) {
+  .block {
+    width: calc(100% - 20px); /* Set blocks to occupy full width on screens smaller than 768px */
+  }
+}

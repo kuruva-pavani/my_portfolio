@@ -1,0 +1,57 @@
+.card {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #BF5CAA;
+}
+
+
+h3{
+  margin: 2rem;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around; /* Align items with equal space around them */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.card {
+  flex: 1; /* Allow cards to grow equally within the flex container */
+  margin: 10px; /* Add margin around each card */
+  max-width: calc(100% - 20px); /* Set maximum width for each card */
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center cards horizontally */
+  }
+
+  .card {
+    max-width: calc(100% - 20px); /* Take full width on smaller screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .cards-container {
+    flex-direction: row; /* Display cards side by side on larger screens */
+  }
+
+  .card {
+    max-width: calc(100% - 20px); /* Set maximum width for each card on larger screens */
+  }
+}
+.contactLink{
+  color: #BF5CAA !important;
+}
+.mb-2{
+  color: #BF5CAA;
+}
+.mb-2.text-muted.card-subtitle.h6{
+  color: #BF5CAA !important;
+}
+.mb-2.text-muted.card-text{
+  color: #BF5CAA !important;
+
+}

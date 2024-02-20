@@ -1,0 +1,156 @@
+.homestarting {
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 8rem;
+}
+#home{
+  margin-top: 4rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto; /* Adjust the column size */
+  grid-template-rows: auto auto; /* Adjust the row size */
+  grid-gap: 1rem; /* Adjust the gap between items */
+}
+
+.image-container {
+  grid-row: 1 / 2;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.socialIcons {
+  grid-row: 2 / 3;
+  display: flex;
+  justify-content: space-around; /* Adjust spacing between icons */
+}
+
+.text-container {
+  flex: 1;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .homestarting {
+    flex-direction: column;
+  }
+  
+  .text-container, .image-container {
+    text-align: center; /* Center both text and image */
+  }
+
+  img {
+    height: auto; /* Let the browser determine image height */
+    width: 100%; /* Image takes full width of container */
+    max-width: 300px; /* Limit image width for smaller screens */
+  }
+}
+
+.social-link {
+  color: inherit; /* Use the parent color */
+  text-decoration: none; /* Remove underline */
+}
+
+h2{
+  margin-left: 1rem;
+  color: #BF5CAA  !important;
+}
+h3{
+  margin-left: 2rem;
+  color: #BF5CAA !important;
+}
+
+h1{
+  color: #BF5CAA  !important;
+  text-align: center;
+  margin-right: 5rem;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  font-family:'Roboto';
+}
+
+.text-container {
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-container h3{
+  text-transform: none;
+}
+.animation {
+  height: 50px;
+  overflow: hidden;
+  margin: 0; /* Adjust margin to remove gap */
+  margin-left: 1rem;
+}
+
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div,
+.second div {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  white-space: nowrap; /* Prevent text wrapping */
+  color: #BF5CAA;
+}
+
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+.text-container {
+  color: #C9B6E4;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Set flex-direction to column for mobile */
+}
+
+.text-container p {
+  margin-bottom: 0; /* Remove default margin */
+}
+
+
+@media (max-width: 1024px) {
+  .homestarting {
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+  }
+  
+  .text-container, .image-container {
+    text-align: center; /* Center both text and image */
+  }
+}
+
